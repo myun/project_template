@@ -2,5 +2,13 @@
 {% block title %}Homepage{% endblock %}
 {% block content %}
     <h1>Hi</h1>
+    <form id="signup_form" method="POST" action='/login'>
+	First name: <input type="text" name="first_name"></br>
+	Last name: <input type="text" name="last_name"></br>
+	Email: <input type="text" name="email"></br>
+	Password: <input type="password" name="password"></br>
+    </form>
+    <button type="submit" form="signup_form" value="Submit" id="signup_form_button">Submit</button>
     <img src='/static/img/Milano.jpg'>
 {% endblock %}
+<script src='/static/js/
